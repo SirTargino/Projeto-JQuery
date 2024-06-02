@@ -16,7 +16,7 @@ function getWeather(){
                 <p>Temperatura: ${Math.round(data.main.temp - 273.15)}°C</p>
                 <p>Descrição: ${data.weather[0].description}</p>
                 <p>Pressão atmosférica: ${data.main.pressure} hPa</p>
-                <p>Humedade: ${data.main.humidity}%</p>
+                <p>Humidade: ${data.main.humidity}%</p>
             `;
             $('#clima').html(clima);
         },
