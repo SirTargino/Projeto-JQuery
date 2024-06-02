@@ -8,7 +8,7 @@ function getWeather(){
 
     $.ajax({
         type: "GET",
-        url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2172d8be65e71595cd745c5887fbad10`,
+        url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`,
         dataType: "jsonp",
         crossDomain: true,
         success: function(data) {
